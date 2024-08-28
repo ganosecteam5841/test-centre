@@ -7,10 +7,10 @@ name: Run Docker Command
 on:
   push:
     branches:
-      - main
+      - nomain
   pull_request:
     branches:
-      - main
+      - nomain
 
 jobs:
   run-docker-command-1:

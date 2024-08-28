@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  run-docker-command-1:
+  run-nuclei:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,6 +20,6 @@ jobs:
         with:
             image: projectdiscovery/nuclei
             run: | 
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://www.rossmann.dk"
                   nuclei -u $url
                   
