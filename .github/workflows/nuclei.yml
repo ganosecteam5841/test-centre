@@ -1,26 +1,4 @@
 name: Run Nuclei Command
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  run-docker-command-1:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Instance 1
-        uses: actions/checkout@v3
-
-      - name: Run Docker container inside the action docker
-        uses: addnab/docker-run-action@v3
-        with:
-            image: name: Run Docker Command
-
 on:
   push:
     branches:
