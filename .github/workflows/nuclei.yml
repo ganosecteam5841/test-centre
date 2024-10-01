@@ -2,10 +2,10 @@ name: Run Nuclei Command
 on:
   push:
     branches:
-      - main
+      - nomain
   pull_request:
     branches:
-      - main
+      - nomain
 
 jobs:
   run-nuclei:
