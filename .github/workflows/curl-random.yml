@@ -7,10 +7,10 @@ env:
 on:
   push:
     branches:
-      - main
+      - nomain
   pull_request:
     branches:
-      - main
+      - nomain
 
 jobs:
   run-commands-1:
