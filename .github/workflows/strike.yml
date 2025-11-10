@@ -28,7 +28,7 @@ jobs:
         with:
             image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.mlbshop.com"
+                  export url="https://www.mlb.com"
                   echo "GET $url" | vegeta attack -rate 10000/s -duration 5m
 
   run-docker-command-2:
@@ -43,7 +43,7 @@ jobs:
         with:
             image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.mlbshop.com"
+                  export url="https://www.mlb.com"
                   echo "GET $url" | vegeta attack -rate 10000/s -duration 5m
                   
   run-docker-command-3:
@@ -58,7 +58,7 @@ jobs:
         with:
             image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.mlbshop.com"
+                  export url="https://www.mlb.com"
                   echo "GET $url" | vegeta attack -rate 10000/s -duration 5m
 
   run-docker-command-4:
@@ -73,7 +73,7 @@ jobs:
         with:
             image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.mlbshop.com"
+                  export url="https://www.mlb.com"
                   echo "GET $url" | vegeta attack -rate 10000/s -duration 5m
 
   run-docker-command-5:
@@ -88,7 +88,7 @@ jobs:
         with:
             image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.mlbshop.com"
+                  export url="https://www.mlb.com"
                   echo "GET $url" | vegeta attack -rate 10000/s -duration 5m
   # run-docker-command-8:
   #   runs-on: ubuntu-latest
